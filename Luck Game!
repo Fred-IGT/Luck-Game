@@ -1,0 +1,93 @@
+while True:
+    
+    import msvcrt
+
+    while msvcrt.kbhit():
+        msvcrt.getch()
+
+    import time
+
+    import random
+
+    num1 = input ("this game is a game about luck please do not enter 1! ---         ")
+
+    if num1 == "1":
+        
+        print ("try something else!")
+        print ("was it worth it?")
+    
+    elif num1 == "WRONG":
+        print("ok ok your math may be a litle better than mine BUT i still think 9 * 10 = 90 and 6 * 12 = 42!!!")
+    
+    elif num1 == "":
+        print ("enter something at least")
+
+    else:
+
+        num2 = random.randint(0,10000)
+
+        if num2 == 1:
+            print("you got 1 could have just typed it less effort")
+            print("try again")
+            
+        elif num2 == 42:
+            print("fun fact 6 * 12 is 42!")
+            print("your number is ",num2)
+
+        elif num2 == 81:
+            print("9 * 10 = 81 if you disagree type WRONG in al caps!")
+            print("your number is ",num2)
+
+        elif num2 == 1000:
+            print("time to take a walk isnt it its almost your bed time!")
+            print("your number is ",num2)
+
+        elif num2 == 10000:
+            print("WOW im... impressed... biggist number avalible to get. you win! ")
+            print("your number is ",num2)
+        
+        elif num2 == 9999:
+            print("Did you have fun while it lasted? Wel i hope so.")
+            print("your number is ",num2)
+        
+        elif num2 == 5000:
+            print("you did not get 5001 but you did get 5000")
+        
+        elif num2 < 100:
+            print("you got something below 100")
+            print("your number is ",num2)
+        
+        elif num2 > 9000:
+            print("biggest 1000")
+            print("your number is ",num2)
+        
+        elif num2 == 2026:
+            print("you got the year from the games something idk")
+            print("your number is ",num2)
+        
+        elif num2 == 0:
+            print("how do you get this?")
+            print("your number is ",num2)
+        
+        elif num2 == 7362:
+            print(" nice number  you got... keeping it?")
+            print("your number is ",num2)
+        
+        elif num2 > 6972:
+            print("in the last 3028")
+            print("your number is ",num2)
+        
+        elif num2 == 8100:
+            print("you got a number that is kinda rare i think")
+            print("your number is ",num2)
+        
+        elif num2 == 3761:
+            print("you got a specifik number that is! drumroll.")
+            time.sleep (1)
+            print("your number is ",num2)
+
+        else:
+            print (f"you got {num2} try again for another number")
+
+    print (" ")
+    time.sleep (2.5)
